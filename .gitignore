@@ -5,7 +5,8 @@
 *.user
 *.suo
 *.db
-
+**/appsettings.json
+**/appsettings.Development.json
 # Node.js / React
 **/node_modules/
 **/dist/
@@ -16,3 +17,4 @@
 .env
 .env.local
 *.pem
+
