@@ -1,0 +1,55 @@
+export interface ICompanyPRofiles {
+    id?: string,
+    userId: string,
+    companyName: string,
+    industry: 0,
+    monthlyRevenue: number,
+    monthlyCosts: number,
+    currency: ["USD",
+        "EUR",
+        "GBP",
+        "SEK",
+        "NOK",
+        "DKK",
+        "JPY",
+        "CNY",
+        "AUD",
+        "CAD",
+        "AED",
+        "SAR"
+    ],
+    financialRecords: [],
+    cashFlowSnapshots: [],
+    businessDecisions: [],
+    aiAnalyses: [],
+    riskAnalysis: []
+}
+
+export interface ICreateCompanyProfiles {
+    companyName: string,
+    industry: ["Technology",
+        "Healthcare",
+        "Finance",
+        "Education",
+        "Manufacturing",
+        "Retail",
+        "Energy",
+        "Transportation",
+        "Entertainment",
+        "Agriculture"]
+    monthlyRevenue: number,
+    monthlyCosts: number,
+    currency: ["USD",
+        "EUR",
+        "GBP",
+        "SEK",
+        "NOK",
+        "DKK",
+        "JPY",
+        "CNY",
+        "AUD",
+        "CAD",
+        "AED",
+        "SAR"
+    ]
+}

@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.105.0" />
+    <PackageReference Include="CsvHelper" Version="33.1.0" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="3.5.1" />
+    <PackageReference Include="itext7" Version="9.6.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.3.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="10.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.AI" Version="10.4.1" />
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.74.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Agents.Core" Version="1.74.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Agents.Orchestration" Version="1.74.0-preview" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.OpenAI" Version="1.74.0" />
+    <PackageReference Include="ModelContextProtocol" Version="1.2.0" />
+    <PackageReference Include="Npgsql" Version="10.0.2" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.1" />
+    <PackageReference Include="Pgvector" Version="0.3.2" />
+    <PackageReference Include="Pgvector.EntityFrameworkCore" Version="0.3.0" />
+    <PackageReference Include="QuestPDF" Version="2026.5.0" />
+    <PackageReference Include="UglyToad.PdfPig" Version="1.7.0-custom-5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AgentBuilder/" />
+    <Folder Include="Controllers/" />
+    <Folder Include="Entities/" />
+    <Folder Include="Entities/Enum/" />
+    <Folder Include="Exceptions/" />
+    <Folder Include="MCP/" />
+  </ItemGroup>
+
+</Project>

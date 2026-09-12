@@ -1,0 +1,18 @@
+# .NET / C#
+**/bin/
+**/obj/
+.vs/
+*.user
+*.suo
+*.db
+
+# Node.js / React
+**/node_modules/
+**/dist/
+**/build/
+.DS_Store
+
+# Environment variables & secrets
+.env
+.env.local
+*.pem

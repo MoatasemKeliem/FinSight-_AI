@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Tailwind 4 class-based dark mode configuration */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    @apply antialiased transition-colors duration-300;
+  }
+}
+
+/* Smooth scroll for better UX */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for dark mode */
+.dark ::-webkit-scrollbar {
+  width: 10px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #020617;
+  /* slate-950 */
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  /* slate-800 */
+  border-radius: 5px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+  /* slate-700 */
+}
+
+button {
+  cursor: pointer;
+}

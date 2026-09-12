@@ -1,0 +1,6 @@
+@finsight_ai_HostAddress = http://localhost:5203
+
+GET {{finsight_ai_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
